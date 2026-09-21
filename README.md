@@ -7,4 +7,4 @@ alongside Modulus (school management platform) and Modulark Aero (drones).
 
 **State: design only. Nothing here is built yet.**
 
-See `docs/` for the division's technical and commercial context.
+Context and conclusions to date: [`docs/LIGHTING-DIVISION.md`](docs/LIGHTING-DIVISION.md).
