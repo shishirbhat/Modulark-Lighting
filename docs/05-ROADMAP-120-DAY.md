@@ -1,5 +1,9 @@
 # 120-day plan to first shipped revenue
 
+> **SUPERSEDED IN PART — see REVISION 2026-09-22 at the end of this file.**
+> Capital assumptions below are not currently met, the build/certify order
+> is corrected there, and the pre-order funding mechanism is withdrawn.
+
 Objective: cheapest and fastest legal path to a shipped, premium,
 BIS-registered product sold direct. Total cash requirement **~₹15.2 lakh**,
 of which ~₹4.5L can be covered by pre-order deposits.
@@ -111,3 +115,85 @@ is the whole point of sequencing it this way.
 5. **Modulus revenue never arrives.** The funding premise for this division
    is a SaaS product whose payment gateway is still unverified. Verify it
    this week; it costs nothing and it underwrites everything above.
+
+---
+
+# REVISION 2026-09-22 — funding reality and corrected sequence
+
+**The 120-day plan above assumed ~₹15.2L of available capital. That capital
+does not exist.** The plan is not cancelled, but its timeline is now gated
+by Modulus SaaS revenue, not by BIS.
+
+## Corrected sequence — the original order was inverted
+
+Previously implied: fund → certify → build. **This is wrong and wastes
+money.**
+
+```
+  BUILD  →  FREEZE  →  CERTIFY  →  PRODUCE
+  ~Rs 0     no cost    Rs 1.4L+     Rs 5.5L+
+  START     gate       90 days
+  NOW
+```
+
+BIS tests a physical sample of a frozen design — a product that does not
+yet exist cannot be certified. And test reports **expire 90 days from
+issue**, so certifying before you can produce wastes the fee entirely.
+
+**Consequence: prototyping is not blocked on money.** Start now. Capital is
+only required at the certification gate.
+
+## Funding source: Modulus SaaS
+
+| Schools signed | Annual revenue @ ~Rs 40k | Unlocks |
+|---|---|---|
+| 2 | Rs 0.8L | Phase A rulings |
+| 5 | Rs 2.0L | Prototype PCBAs, CNC samples |
+| 10 | Rs 4.0L | Phase C compliance |
+| 35–40 | Rs 15L | Full original plan |
+
+`[ESTIMATE]` — pricing and pipeline unconfirmed. Note Indian school
+procurement clusters February–April for the June academic year.
+
+**Realistic: first legal hardware sale 24–30 months out under this plan.**
+
+## OPEN STRATEGIC DECISION — "brain first"
+
+Not locked. Founder decision required before capital is committed.
+
+If the Core is ruled **outside CRS scope** (question O2 / A2), Modulark
+could ship the Core alone as a local no-cloud controller commanding
+existing Matter or Zigbee bulbs, deferring the Field module entirely.
+
+| | Full v1 kit | Brain-first |
+|---|---|---|
+| Certification | BIS CRS + WPC | **WPC ETA only** |
+| Compliance cost | Rs 5–7L | **~Rs 60–90k** |
+| Compliance time | 90+ days | **2–6 weeks** |
+| Capital to first sale | Rs 15.2L | **~Rs 2L** `[ESTIMATE]` |
+| Proves the solver (the actual IP) | Yes | **Yes** |
+
+Trade-off: loses the complete-system positioning and cedes CRI control to
+third-party bulbs. Gains roughly 18 months.
+
+**This elevates O2/A2 to the single highest-value question in the project.**
+
+## Do now, at ~Rs 0
+
+1. Breadboard the solver — ESP32 dev board + AS7341 + VEML7700 breakouts,
+   ~Rs 3,000–5,000. This is the IP.
+2. Get Modulus accepting payments. Requires an adult on the merchant
+   account. This is the funding tap.
+3. Enter Youth Co:Lab / India STEM Innovation Challenge. Seed grants of
+   Rs 2.2–5L would fund Phases A and C outright.
+
+## Governance note
+
+The founder is a minor. A minor cannot hold a DIN or be a director
+(Companies Act 2013), and a minor's contracts are void ab initio (Indian
+Contract Act s.11). **An adult director/signatory executes all contracts:**
+BIS applications, lab agreements, vendor POs, merchant accounts.
+
+**Do not take customer pre-orders or deposits** for any product not yet
+BIS-registered. Superseded guidance elsewhere in this file suggesting
+pre-orders as a funding mechanism is **withdrawn**.

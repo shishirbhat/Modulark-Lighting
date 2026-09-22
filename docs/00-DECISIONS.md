@@ -13,11 +13,18 @@ Status values: LOCKED (do not revisit), OPEN (needs a ruling), DEFERRED.
 | D5 | **Mains terminates in a BIS-registered encapsulated AC-DC module.** Interior is SELV DC only. | Standard practice. Confines mains fire risk to a pre-certified sealed component. |
 | D6 | **No internal plastic structural frame.** PCB mounts to the aluminium body on metal standoffs. | Leaves no internal insulating part for the glow-wire probe to test. |
 | D7 | **Diffusers are bought certified PC** with GWIT/GWFI data. | Diffuser is unavoidably a non-metallic part and must meet 650°C. Inherit the supplier's certification. |
+| D8a | **No customer pre-orders or deposits** for any product not yet BIS-registered. Founder is a minor with no capital to refund; an adult director carries the liability. Earlier pre-order guidance is withdrawn. | Legal and financial exposure |
 | D8 | **Direct-to-consumer only for v1. No interior-designer channel.** | A 20–25% channel cut does not survive the v1 cost base. Revisit only after volume manufacturing. |
 | D9 | **Field modules carry no internal cell. They are Pack-powered.** | Saves ~₹330/Field, removes a second battery SKU to certify, and fixes the Field:Pack count mismatch. Kit is now 3 Field + 3 Pack. |
 | D10 | **Kit price is ₹29,999.** | ₹17,999 was below cost after tax. ₹24,999 breaks even above a realistic solo build ceiling. ₹29,999 breaks even at ~20 kits/month against a ~28–45 kit ceiling. See `04-UNIT-ECONOMICS.md`. |
 | D11 | **Industrial and brand design is done in-house by the founder at ₹0 cash cost.** | Founder decision. Note: product photography is NOT in this exclusion and is budgeted — it is where a premium claim is won or lost. |
 | D12 | **v1 is three SKUs: Core, Field, Pack.** | Smallest shippable system. Halves the compliance bill versus four SKUs. |
+
+## OPEN STRATEGIC DECISION
+
+| # | Decision | Status |
+|---|---|---|
+| S1 | **"Brain first"** — ship the Core alone as a local controller for third-party Matter/Zigbee bulbs, deferring the Field module. Cuts capital to first sale from ~₹15.2L to ~₹2L and compliance from 90+ days to 2–6 weeks, **if** the Core is ruled outside CRS. Trades away complete-system positioning and CRI control. | **Awaiting founder decision.** Depends on O2/A2 |
 
 ## DEFERRED
 
