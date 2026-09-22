@@ -223,3 +223,44 @@ researched and all are closed:
 booked. The only lever is freezing sooner.** Future sessions should not
 spend time re-litigating this — fill the window instead (pre-orders,
 firmware, store, photography all run inside it at no schedule cost).
+
+## 12. Correction — Class III / battery operation does NOT shrink the test matrix
+
+A claim circulated internally that because the product is battery-powered
+and Class III / SELV, the lab "skips insulation, leakage and surge tests"
+and the matrix "shrinks to IP rating and thermal rise only", giving a
+30–45 day timeline. **This is wrong and acting on it will fail the test.**
+
+**What Class III actually removes:** electric-shock and dielectric tests —
+insulation resistance, leakage current, dielectric strength. Real, but
+narrow.
+
+**What Class III does NOT remove.** IEC 60598-1's requirements cover
+classification, marking, mechanical construction, electrical construction
+and photobiological safety, none of which are voltage-class dependent:
+
+- **Glow-wire 650°C on non-metallic parts** — applies regardless of voltage
+  class. Our diffuser still faces it. See §2.
+- **Photobiological safety, IEC 62471** — risk group classification
+- **Thermal rise, marking, mechanical, construction, endurance**
+
+**Why this matters financially:** believing the matrix is "IP + thermal
+only" means skipping qualification of the certified PC diffuser — the
+single gating item for our certification. That failure surfaces at the lab,
+roughly six weeks and ~Rs 40k in.
+
+**On the timeline:** the 24–30 month estimate in `05-ROADMAP-120-DAY.md` was
+never driven by high-voltage testing. It is driven by **capital
+availability** (Modulus revenue). Our architecture has been SELV-only and
+mains-free since `CLAUDE.md` rule 1 was written. Arguments that "battery
+operation escapes the mains timeline" address a constraint this project
+never had.
+
+**On the battery annexure:** IS 10322:2026 added its normative annexure on
+battery/EDLC-operated luminaires to bring them explicitly **into** scope.
+It is not an exemption. See §11, which already records this.
+
+**Pre-certified cells** (D4) remain correct and already banked — buying
+BIS-registered cells under IS 16046 avoids registering cells ourselves.
+That is a real saving, not a new discovery, and it does not shorten the
+luminaire's own test plan.

@@ -135,3 +135,34 @@ Nothing in this BOM has a lead time beyond ~8 weeks.
 2. Order **one reel each** of warm and cool CRI 95 LEDs — long-lead, single-bin
 3. Quote the **CNC job shop**; negotiate a held program to avoid repeat setup charges
 4. Everything else is 1–4 week commodity stock
+
+---
+
+## Domestic sourcing update 2026-09-22
+
+Prefer Indian suppliers wherever available. This removes customs duty
+(BCD + SWS, non-recoverable), clearance delay, and the risk of shipments
+being held pending BIS documentation (question B8).
+
+| Item | Domestic option | Note |
+|---|---|---|
+| **PCB fab + PCBA** | **Lion Circuits (Bengaluru)** — ~Rs 799 / 5 boards, ~8 day fabrication, SMT assembly, instant Gerber quote, UPI | **Collapses the iteration loop from 3–4 weeks to ~10 days.** Biggest single schedule win available |
+| ESP32-C3-MINI-1 | Silicon TechnoLabs, Robocraze, DNA Tech, Campus Component | Rs 195–235 domestic. Slightly above LCSC-landed but no customs risk |
+| PC diffuser | Indian PC extrusion companies (e.g. Noida / regional industrial hubs) | **Still must supply GWIT/GWFI data in writing.** Domestic sourcing does not relax this |
+| Aluminium-core MCPCB | Domestic MCPCB fabricators | Verify they supply **finished, etched, solder-masked boards** — raw copper-clad aluminium laminate sheet is not a PCB |
+| High-CRI LEDs | Kwality Photonics (Hyderabad) and similar | Real manufacturer, worth a quote. **Demand bin data and a CRI test report.** Note C still applies — an unverifiable CRI claim fails at certification and breaks closed-loop colour |
+
+### Assembly tooling worth building
+
+**Pogo-pin programming jig.** Expose TX/RX/VCC/GND pads on the board edge
+and build a spring-pin fixture. Press, flash, move on. Standard practice,
+saves the USB connector and a large amount of time across a batch.
+
+### Rejected: internal plastic snap-fit tray
+
+A suggestion to mount the PCB in a snap-fit plastic skeletal tray was
+considered and **rejected**. It reverses `CLAUDE.md` rule 2 and decision D6.
+The internal plastic frame was deleted precisely so no internal
+non-metallic part exists for the glow-wire probe. **PCB mounts to the
+aluminium body on metal standoffs.** This is not negotiable without
+restarting the certification strategy.
