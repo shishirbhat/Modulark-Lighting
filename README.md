@@ -1,10 +1,36 @@
 # Modulark Lighting
 
-Room-level ambient lighting system. A division of **Modulark Tech Labs Pvt Ltd**,
-alongside Modulus (school management platform) and Modulark Aero (drones).
+Room-level ambient lighting. A sensing brain solves for how a room should
+look and commands wireless light modules to reach it. Closed loop. No app,
+no account, no internet.
 
-> Every lighting company controls lights. Nobody controls the room.
+Modulark Tech Labs Pvt Ltd, India.
 
-**State: design only. Nothing here is built yet.**
+## v1 — three SKUs
 
-See `docs/` for the division's technical and commercial context.
+| SKU | What it is |
+|---|---|
+| **Core** | Dock: spectral and presence sensing, solver, dial, charges 3 Packs |
+| **Field** | Circular aluminium wall light, CRI 95, dual-channel tunable, Pack-powered |
+| **Pack** | Swappable Li-ion battery |
+
+**Kit = Core ×1 + Field ×3 + Pack ×3 — ₹29,999, direct to consumer.**
+
+## Documentation
+
+Read in order. `00-DECISIONS.md` is authoritative.
+
+| Doc | Contents |
+|---|---|
+| [`CLAUDE.md`](CLAUDE.md) | Context and non-negotiable engineering rules for all sessions |
+| [`docs/00-DECISIONS.md`](docs/00-DECISIONS.md) | Locked decisions, deferred items, open rulings |
+| [`docs/01-PRODUCT-ARCHITECTURE.md`](docs/01-PRODUCT-ARCHITECTURE.md) | SKU specs, power topology, supply-chain risk |
+| [`docs/02-COMPLIANCE.md`](docs/02-COMPLIANCE.md) | BIS matrix, glow-wire reality, GST, customs |
+| [`docs/03-MANUFACTURING.md`](docs/03-MANUFACTURING.md) | CNC aluminium method, PCBA, assembly rules |
+| [`docs/04-UNIT-ECONOMICS.md`](docs/04-UNIT-ECONOMICS.md) | Cost build-up, pricing, break-even, working capital |
+| [`docs/05-ROADMAP-120-DAY.md`](docs/05-ROADMAP-120-DAY.md) | Phased plan to first revenue, gate conditions |
+
+## Status
+
+Pre-revenue. BIS CRS registration on the Field module is the critical path
+and gates all sales.
