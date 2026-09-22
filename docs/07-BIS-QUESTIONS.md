@@ -220,3 +220,35 @@ correspondence. Every question above is framed as seeking correct
 classification for a specific construction. Keep it that way — these
 records persist, and BIS surveillance and any future product-liability
 proceeding can read them.
+
+---
+
+## B13 — fee concessions (added 2026-09-22, high priority)
+
+To BIS and each scheme portal, in writing:
+
+**B13.1** Confirm the current concession percentage on BIS certification
+and minimum marking fees for a **micro enterprise** newly registered under
+Udyam, per the notification dated 17 March 2026 under Scheme-X of
+Schedule-II, BIS (Conformity Assessment) Regulations 2018. Confirm validity
+to 31 May 2029.
+
+**B13.2** Is **CRS registration for LED luminaires** a covered product
+category under the MSME product certification subsidy (75% of expenditure,
+capped Rs 1.5 lakh for national standards)? What is the claim procedure and
+the reimbursement timeline?
+
+**B13.3** Does the **DoT/TEC testing and certification reimbursement
+scheme** cover WPC ETA RF test charges for a micro enterprise? What
+documentation is required and when is it claimed — before or after the ETA
+is granted?
+
+**B13.4** What **state-level** testing or certification reimbursement
+applies in our state, at what percentage and cap?
+
+**B13.5** Must Udyam Registration and DPIIT startup recognition both be in
+place **before** application, or can they be claimed retrospectively
+against fees already paid?
+
+**Priority: ask alongside A2/A3.** This is worth roughly Rs 3.5–4.5 lakh
+and it changes when the project can afford to start.

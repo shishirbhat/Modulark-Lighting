@@ -264,3 +264,62 @@ It is not an exemption. See §11, which already records this.
 BIS-registered cells under IS 16046 avoids registering cells ourselves.
 That is a real saving, not a new discovery, and it does not shorten the
 luminaire's own test plan.
+
+## 13. MSME and startup fee concessions — a 60-70% legitimate reduction
+
+Earlier compliance estimates in this repo did **not** account for MSME
+concessions and were materially too high. Corrected here.
+
+**Key distinction: BIS government fees and private lab testing charges are
+separate line items, and different schemes address each.**
+
+| Scheme | Covers | Benefit | Source |
+|---|---|---|---|
+| **BIS Scheme-X fee concession** (notification 17 Mar 2026, valid to 31 May 2029) | BIS certification / minimum marking fee | **80% for micro**, 20% small/medium, +10% women-led | BIS Conformity Assessment Regs 2018, Sch-II |
+| **MSME product certification subsidy** | Actual expenditure on product licensing to national standards | **75%, capped Rs 1.5L** (Rs 2L international) | MSME scheme |
+| **DoT / TEC reimbursement** | Telecom testing and certification — **covers WPC ETA RF testing** | Reimbursement for startups and MSEs | tec.gov.in/tcrs |
+| **State schemes** | NABL/BIS lab testing fees | Varies — UP offers 80%, max Rs 1L | `[CONFIRM for our state]` |
+
+### Restated compliance cost `[ESTIMATE]`
+
+| Line | Before | After |
+|---|---|---|
+| BIS govt / marking fee | ~Rs 1,00,000 | **~Rs 20,000** |
+| Lab testing charges | Rs 25–60k | **~Rs 6–15k** |
+| Consultant (not subsidised) | Rs 50,000 | Rs 50,000 |
+| WPC RF testing x3 | ~Rs 1,20,000 | **largely reimbursable** |
+| **Total** | **Rs 5–7L** | **~Rs 1.5–2.5L** |
+
+This moves the funding gate in `05-ROADMAP-120-DAY.md` from roughly 10
+schools signed to 3–4 schools, or a single competition win.
+
+### Conditions — all three matter
+
+1. **Udyam Registration is prerequisite and must exist BEFORE applying.**
+   Free, online, ~15 minutes. Requires the adult director; a minor cannot
+   register. No Udyam, no concessions.
+2. **DPIIT startup recognition** may be required for some schemes. Needs
+   the company incorporated.
+3. **Reimbursement schemes pay in arrears.** Only the BIS 80% concession is
+   an upfront discount. The MSME and TEC schemes require paying first and
+   claiming back, so **initial outlay is unchanged** — this reduces total
+   cost, not working capital.
+
+### New question B13
+
+Confirm in writing with BIS and each scheme portal: current concession
+percentages, eligibility for a micro enterprise newly registered on Udyam,
+whether CRS registration for LED luminaires is a covered product category,
+and the claim procedure and timeline for each reimbursement.
+
+**All figures above are from secondary sources and are `[ESTIMATE]` until
+B13 is answered. Do not budget on them as facts.**
+
+### Note on framing
+
+These are published government schemes with eligibility criteria, applied
+for through official channels. They are not loopholes and should never be
+described as such in any application. Four separate attempts to find a way
+around the CRS requirement have been researched and closed (see §11). This
+is the legitimate route, and it is worth more than any of them would have
+been.

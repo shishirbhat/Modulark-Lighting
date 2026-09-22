@@ -149,7 +149,8 @@ only required at the certification gate.
 |---|---|---|
 | 2 | Rs 0.8L | Phase A rulings |
 | 5 | Rs 2.0L | Prototype PCBAs, CNC samples |
-| 10 | Rs 4.0L | Phase C compliance |
+| 3–4 | Rs 1.5L | **Phase C compliance, post-MSME concessions** (see `02-COMPLIANCE.md` §13) |
+| 10 | Rs 4.0L | Phase C compliance at pre-concession cost |
 | 35–40 | Rs 15L | Full original plan |
 
 `[ESTIMATE]` — pricing and pipeline unconfirmed. Note Indian school
