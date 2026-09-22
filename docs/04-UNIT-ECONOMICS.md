@@ -9,21 +9,21 @@ tracked separately as a capacity constraint in `03-MANUFACTURING.md`.
 
 | | Field @100 | Field @500 | Pack @100 | Pack @500 | Core @100 | Core @500 |
 |---|---|---|---|---|---|---|
-| Electronic parts | 1,050 | 924 | 510 | 447 | 2,600 | 2,280 |
+| Electronic parts | 1,344 | 1,183 | 510 | 447 | 2,600 | 2,280 |
 | Certified PC diffuser | 120 | 105 | — | — | — | — |
 | CNC aluminium, anodised | 750 | 450 | 350 | 210 | 1,100 | 700 |
 | Metal standoffs / fasteners | 40 | 35 | — | — | — | — |
 | BCD + SWS on imported PCBA | 198 | 175 | 80 | 70 | 400 | 350 |
 | Assembly + test + flash | 115 | 100 | 43 | 38 | 200 | 175 |
 | Packaging | 150 | 130 | 60 | 50 | 300 | 260 |
-| **COGS** | **2,423** | **1,919** | **1,043** | **815** | **4,600** | **3,765** |
+| **COGS** | **2,717** | **2,178** | **1,043** | **815** | **4,600** | **3,765** |
 
 ## Kit = Core ×1 + Field ×3 + Pack ×3
 
 | Volume | Kit COGS |
 |---|---|
-| @100 units | **₹14,998** |
-| @500 units | **₹11,967** |
+| @100 units | **₹15,880** |
+| @500 units | **₹12,744** |
 
 ## Price sensitivity — direct sales, no channel cut
 
@@ -88,3 +88,26 @@ cash-flow lever available and it costs nothing.
 | Kit at ₹17,999 | Needs ₹29,999 | Repriced |
 | GenX320 "unpriced" | ~₹27,000/module | Cannot exist in v1 |
 | 3-Field / 2-Pack kit | 3 Field / 3 Pack | Original kit could not power all modules |
+
+## Revision 2026-09-22 — itemised BOM correction
+
+The Field module was re-costed line by line in `06-BOM-FIELD-MODULE.md`.
+It came in **₹294 above the modelled figure** (₹2,717 vs ₹2,423), mainly
+because the ESP32-C3-MINI-1 was modelled at ₹150 when Indian distributor
+pricing runs ₹195–330 and LCSC-landed is ₹160–180.
+
+Restated at qty 100:
+
+| | Before | After |
+|---|---|---|
+| Field module COGS | ₹2,423 | **₹2,717** |
+| Kit COGS | ₹14,998 | **₹15,880** |
+| Contribution @ ₹29,999, 18% mixed | ₹10,425 | **₹9,543** |
+| Gross margin | 41.0% | **37.5%** |
+| **Break-even** | 20 kits/mo | **22 kits/mo** |
+
+Still inside the ~28–45 kit/month solo ceiling, but the margin of error
+narrowed. **₹29,999 remains the floor price** — the case for anything lower
+is now weaker, not stronger.
+
+Component-level costs are maintained in `06-BOM-FIELD-MODULE.md`, not here.

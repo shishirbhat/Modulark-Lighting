@@ -37,7 +37,8 @@ Field module is the critical path and gates all revenue.
 ## Repo conventions
 
 - Work on the branch you are assigned. Do not push to other branches.
-- Cost figures live only in `docs/04-UNIT-ECONOMICS.md`. Do not duplicate
-  them elsewhere; link instead.
+- Rolled-up product and kit costs live only in
+  `docs/04-UNIT-ECONOMICS.md`. Component-level costs live only in
+  `docs/06-BOM-FIELD-MODULE.md`. Do not duplicate either; link instead.
 - Anything unverified is tagged `[CONFIRM]`. Do not strip the tag without
   citing a primary source.
