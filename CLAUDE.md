@@ -1,6 +1,7 @@
 # Modulark Lighting — Context for all sessions
 
-Modulark Tech Labs Pvt Ltd (India). Room-level ambient lighting system.
+Modulark (India) — legal entity not yet formed, see `docs/08-ENTITY.md`.
+Room-level ambient lighting system.
 A sensing brain solves for how a room should look and commands wireless
 light modules to reach it. Closed loop. No app, no account, no internet.
 
