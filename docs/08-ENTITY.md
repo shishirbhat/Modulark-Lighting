@@ -93,3 +93,75 @@ testing and filed the day the report lands.
 ceiling of ~28–45 (`04-UNIT-ECONOMICS.md`, `03-MANUFACTURING.md`). Build to
 confirmed orders. Over-ordering inventory is the fastest way to lose the
 Modulus money.
+
+---
+
+## Udyam registration notes (2026-09-23)
+
+Registration started as a **sole proprietorship in the founder's mother's
+name**. She is the proprietor and sole legal owner.
+
+### Employee count field — not an issue
+
+MSME classification depends **only on investment in plant and machinery
+and on turnover** (micro: investment up to Rs 2.5 cr, turnover up to
+Rs 10 cr). The employee-count field is statistical and does **not** affect
+micro/small/medium status, and therefore does not affect the 80 percent BIS
+fee concession. Udyam details are editable later in any case.
+
+### Founder's age — not an issue
+
+At 15 the founder is an **adolescent**, not a **child**, under the Child
+and Adolescent Labour (Prohibition and Regulation) Act 1986 as amended
+2016. Adolescents aged 14–18 may be employed except in hazardous
+processes; the 2016 amendment reduced that schedule from 83 items to 3.
+The enterprise is also a family enterprise.
+
+`[CONFIRM]` Before physical assembly begins, confirm with the CA that
+nothing in the assembly process falls under the remaining hazardous-process
+schedule. Home-scale soldering is very unlikely to, but it is a cheap
+question.
+
+## GOVERNANCE GAP — co-founder has no legal standing
+
+A co-founder has been mentioned. **A sole proprietorship has exactly one
+owner.** As currently structured:
+
+| Party | Legal ownership |
+|---|---|
+| Founder's mother (proprietor) | **100% of the business, its revenue and all IP** |
+| Founder (minor) | **Nothing** |
+| Co-founder | **Nothing** |
+
+This is the correct structure for now and is not a problem in itself. It
+becomes one only if the co-founder believes they hold a stake, contributes
+for a long period, and later discovers they do not. That misunderstanding —
+not business failure — is the most common way young founding teams break.
+
+### Action: write the understanding down now
+
+Not a contract. Both founders are minors, so an agreement between them is
+void ab initio and unenforceable. The purpose is to prevent divergent
+memories, not to create legal rights. A dated one-page note signed by both,
+recording:
+
+1. What each person is contributing
+2. The intended split when a real entity exists
+3. **That equity accrues over time, not on day one.** Someone who leaves
+   after three months should not retain a founder's share
+4. What happens if either person leaves
+5. That IP belongs to the business, not to either individual
+
+### Formalisation point
+
+The same point as the entity decision: **at the BIS gate / Pvt Ltd
+conversion**, when shares exist and can be issued properly. If the
+co-founder is also a minor, the same constraints apply — no DIN, no
+directorship, contracts void; gifted fully-paid shares with a guardian
+voting are possible.
+
+### New open item
+
+| # | Item |
+|---|---|
+| E4 | Founder-understanding note written and signed by both founders. Zero cost, twenty minutes, do before further work accumulates |
