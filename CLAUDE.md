@@ -1,6 +1,7 @@
 # Modulark Lighting — Context for all sessions
 
-Modulark Tech Labs Pvt Ltd (India). Room-level ambient lighting system.
+Modulark (India) — legal entity not yet formed, see `docs/08-ENTITY.md`.
+Room-level ambient lighting system.
 A sensing brain solves for how a room should look and commands wireless
 light modules to reach it. Closed loop. No app, no account, no internet.
 
@@ -37,7 +38,8 @@ Field module is the critical path and gates all revenue.
 ## Repo conventions
 
 - Work on the branch you are assigned. Do not push to other branches.
-- Cost figures live only in `docs/04-UNIT-ECONOMICS.md`. Do not duplicate
-  them elsewhere; link instead.
+- Rolled-up product and kit costs live only in
+  `docs/04-UNIT-ECONOMICS.md`. Component-level costs live only in
+  `docs/06-BOM-FIELD-MODULE.md`. Do not duplicate either; link instead.
 - Anything unverified is tagged `[CONFIRM]`. Do not strip the tag without
   citing a primary source.

@@ -129,3 +129,197 @@ compresses it below ~90 days. Therefore:
    the BIS window at no schedule cost.
 5. Take pre-orders during the window. Legal, funds the batch, and validates
    the ₹29,999 price before inventory is committed.
+
+---
+
+# Addendum 2026-09-22 — Core scope, component certification, test validity
+
+## 7. Does the Core (sensor + charging pod) need BIS?
+
+**CRS is a closed, enumerated list of ~65 notified categories by serial
+number.** It is not a blanket rule covering all electronics. The only
+question is whether the Core matches an entry.
+
+**Assessment: probably out of scope, but unresolved.** O2 stands.
+
+| Out of scope | Strength |
+|---|---|
+| Not a luminaire — contains no light source | Strong |
+| Not a power bank — no portable output | Strong |
+| Not a power adapter — uses an external certified one | Strong, **conditional** |
+| Not notified IT equipment (laptop, tablet, printer…) | Strong |
+| Not a dimmer in the power-path sense — sends wireless commands only, never in the Field's power path | Moderate |
+
+| In scope / risk | Assessment |
+|---|---|
+| Lighting notification covers "lamps, luminaires, modules, drivers and **dimmers**." If BIS reads a wireless controller as a dimmer, the Core is in. | **The real risk. Cannot be resolved from public sources.** |
+| IS 15885 Part 2/Sec 13 covers DC-supplied electronic control gear for LED modules, built-in and independent | Weak — the Core supplies no power to the LEDs; the Pack does |
+| An SMPS placed **inside** the Core would pull it into IS 13252 / IEC 62368-1 | **Entirely within our control — do not do this** |
+
+### Design rules that follow
+
+1. **The mains adapter stays external and BIS-certified.** Never integrate
+   an SMPS into the Core to save cost. This is the single decision that
+   most improves the Core's chance of being out of scope. Reinforces D5.
+2. **If the Core is ruled in scope, certify to IS/IEC 62368-1:2023, not
+   IS 13252.** IS 13252 Part 1 and IS 616 are withdrawn on **1 November
+   2028**. Certifying to the outgoing standard means paying twice.
+
+## 8. New open question — O6
+
+**Does the Field module's internal constant-current LED driver require
+separate registration under IS 15885 Part 2/Sec 13, or is it covered as
+built-in control gear by the luminaire's own registration?**
+
+Normal practice is the latter — built-in control gear is tested as part of
+the luminaire. But if BIS requires separate registration that is another
+model and roughly another ₹1L. **Add to the consultant's brief.**
+
+## 9. Using BIS-certified components does not remove registration
+
+Asked and answered: **it does not, and it saves zero days.**
+
+- CRS applies to the **final assembled product**, not its components.
+- IS 10322 Part 1 is explicit: **LED modules are integral components of the
+  luminaire and are tested as assembled in the luminaire.**
+- Only four BOM categories have any BIS certification available at all:
+  cells (IS 16046 — locked, D4), encapsulated AC-DC modules and adapters
+  (IS 13252 — locked, D5), mains LED drivers (IS 15885 — **not applicable**,
+  the Field is SELV), and LED modules (IS 16103 — **do not pursue**, the
+  registered Indian supply base is CRI 80 and would cost us the CRI 95
+  differentiator).
+- Everything else — MCU, sensors, pogo pins, magnets, PCB, passives,
+  diffuser, aluminium — has **no BIS category to be certified under**.
+
+**What certified components do buy:** a clean Critical Component List (CCL)
+that passes verification without argument, and lower first-pass failure
+risk in the mains path. Worth the ~₹450–550/kit premium. Not a shortcut.
+
+## 10. Scheduling trap — test reports expire in 90 days
+
+**BIS test reports are valid for 90 days from issue** and must reach BIS
+before expiry.
+
+Consequences:
+- You **cannot** test early to get ahead. The report will expire.
+- Design freeze must be genuinely final before a sample reaches the lab.
+- Testing and application submission must be tightly sequenced.
+
+Build this into Phase C timing in `05-ROADMAP-120-DAY.md`.
+
+## 11. Closed avenues — do not re-investigate
+
+Four separate routes around the ~90-day BIS CRS timeline have been
+researched and all are closed:
+
+| Route | Status |
+|---|---|
+| Battery-powered products fall outside scope | **Closed.** IS 10322:2026 added a normative annexure on battery/EDLC-operated luminaires |
+| HSE exemption (<100 units/model/year) | **Closed.** Requires three-phase, or >16 A single-phase, or >1.5 m × 0.8 m |
+| Air gap bypasses the glow-wire test | **Closed.** Moves the part from tier 1 to tier 2; it is still tested at 650°C |
+| Building from BIS-certified components | **Closed.** CRS certifies the finished product; components are tested as assembled |
+
+**The 90 days is fixed and starts when the design is frozen and the lab is
+booked. The only lever is freezing sooner.** Future sessions should not
+spend time re-litigating this — fill the window instead (pre-orders,
+firmware, store, photography all run inside it at no schedule cost).
+
+## 12. Correction — Class III / battery operation does NOT shrink the test matrix
+
+A claim circulated internally that because the product is battery-powered
+and Class III / SELV, the lab "skips insulation, leakage and surge tests"
+and the matrix "shrinks to IP rating and thermal rise only", giving a
+30–45 day timeline. **This is wrong and acting on it will fail the test.**
+
+**What Class III actually removes:** electric-shock and dielectric tests —
+insulation resistance, leakage current, dielectric strength. Real, but
+narrow.
+
+**What Class III does NOT remove.** IEC 60598-1's requirements cover
+classification, marking, mechanical construction, electrical construction
+and photobiological safety, none of which are voltage-class dependent:
+
+- **Glow-wire 650°C on non-metallic parts** — applies regardless of voltage
+  class. Our diffuser still faces it. See §2.
+- **Photobiological safety, IEC 62471** — risk group classification
+- **Thermal rise, marking, mechanical, construction, endurance**
+
+**Why this matters financially:** believing the matrix is "IP + thermal
+only" means skipping qualification of the certified PC diffuser — the
+single gating item for our certification. That failure surfaces at the lab,
+roughly six weeks and ~Rs 40k in.
+
+**On the timeline:** the 24–30 month estimate in `05-ROADMAP-120-DAY.md` was
+never driven by high-voltage testing. It is driven by **capital
+availability** (Modulus revenue). Our architecture has been SELV-only and
+mains-free since `CLAUDE.md` rule 1 was written. Arguments that "battery
+operation escapes the mains timeline" address a constraint this project
+never had.
+
+**On the battery annexure:** IS 10322:2026 added its normative annexure on
+battery/EDLC-operated luminaires to bring them explicitly **into** scope.
+It is not an exemption. See §11, which already records this.
+
+**Pre-certified cells** (D4) remain correct and already banked — buying
+BIS-registered cells under IS 16046 avoids registering cells ourselves.
+That is a real saving, not a new discovery, and it does not shorten the
+luminaire's own test plan.
+
+## 13. MSME and startup fee concessions — a 60-70% legitimate reduction
+
+Earlier compliance estimates in this repo did **not** account for MSME
+concessions and were materially too high. Corrected here.
+
+**Key distinction: BIS government fees and private lab testing charges are
+separate line items, and different schemes address each.**
+
+| Scheme | Covers | Benefit | Source |
+|---|---|---|---|
+| **BIS Scheme-X fee concession** (notification 17 Mar 2026, valid to 31 May 2029) | BIS certification / minimum marking fee | **80% for micro**, 20% small/medium, +10% women-led | BIS Conformity Assessment Regs 2018, Sch-II |
+| **MSME product certification subsidy** | Actual expenditure on product licensing to national standards | **75%, capped Rs 1.5L** (Rs 2L international) | MSME scheme |
+| **DoT / TEC reimbursement** | Telecom testing and certification — **covers WPC ETA RF testing** | Reimbursement for startups and MSEs | tec.gov.in/tcrs |
+| **State schemes** | NABL/BIS lab testing fees | Varies — UP offers 80%, max Rs 1L | `[CONFIRM for our state]` |
+
+### Restated compliance cost `[ESTIMATE]`
+
+| Line | Before | After |
+|---|---|---|
+| BIS govt / marking fee | ~Rs 1,00,000 | **~Rs 20,000** |
+| Lab testing charges | Rs 25–60k | **~Rs 6–15k** |
+| Consultant (not subsidised) | Rs 50,000 | Rs 50,000 |
+| WPC RF testing x3 | ~Rs 1,20,000 | **largely reimbursable** |
+| **Total** | **Rs 5–7L** | **~Rs 1.5–2.5L** |
+
+This moves the funding gate in `05-ROADMAP-120-DAY.md` from roughly 10
+schools signed to 3–4 schools, or a single competition win.
+
+### Conditions — all three matter
+
+1. **Udyam Registration is prerequisite and must exist BEFORE applying.**
+   Free, online, ~15 minutes. Requires the adult director; a minor cannot
+   register. No Udyam, no concessions.
+2. **DPIIT startup recognition** may be required for some schemes. Needs
+   the company incorporated.
+3. **Reimbursement schemes pay in arrears.** Only the BIS 80% concession is
+   an upfront discount. The MSME and TEC schemes require paying first and
+   claiming back, so **initial outlay is unchanged** — this reduces total
+   cost, not working capital.
+
+### New question B13
+
+Confirm in writing with BIS and each scheme portal: current concession
+percentages, eligibility for a micro enterprise newly registered on Udyam,
+whether CRS registration for LED luminaires is a covered product category,
+and the claim procedure and timeline for each reimbursement.
+
+**All figures above are from secondary sources and are `[ESTIMATE]` until
+B13 is answered. Do not budget on them as facts.**
+
+### Note on framing
+
+These are published government schemes with eligibility criteria, applied
+for through official channels. They are not loopholes and should never be
+described as such in any application. Four separate attempts to find a way
+around the CRS requirement have been researched and closed (see §11). This
+is the legitimate route, and it is worth more than any of them would have
+been.

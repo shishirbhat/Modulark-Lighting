@@ -4,7 +4,7 @@ Room-level ambient lighting. A sensing brain solves for how a room should
 look and commands wireless light modules to reach it. Closed loop. No app,
 no account, no internet.
 
-Modulark Tech Labs Pvt Ltd, India.
+Modulark, India. Legal entity not yet formed — see [`docs/08-ENTITY.md`](docs/08-ENTITY.md).
 
 ## v1 — three SKUs
 
