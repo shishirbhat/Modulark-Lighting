@@ -29,6 +29,8 @@ Read in order. `00-DECISIONS.md` is authoritative.
 | [`docs/03-MANUFACTURING.md`](docs/03-MANUFACTURING.md) | CNC aluminium method, PCBA, assembly rules |
 | [`docs/04-UNIT-ECONOMICS.md`](docs/04-UNIT-ECONOMICS.md) | Cost build-up, pricing, break-even, working capital |
 | [`docs/05-ROADMAP-120-DAY.md`](docs/05-ROADMAP-120-DAY.md) | Phased plan to first revenue, gate conditions |
+| [`docs/08-REJECTED-IDEAS.md`](docs/08-REJECTED-IDEAS.md) | Killed ideas and why — not the same as deferred |
+| [`docs/09-SOLVER-AND-LEARNING.md`](docs/09-SOLVER-AND-LEARNING.md) | Transport matrix, the solve, household learning |
 
 ## Status
 
